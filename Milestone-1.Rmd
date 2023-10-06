@@ -86,10 +86,10 @@ And that is exactly the first thing that you will do!
 
 <!-------------------------- Start your work below ---------------------------->
 
-1: 'cancer_sample'
-2: 'flow_sample'
-3: 'apt_buildings'
-4: 'building_permits'
+1: `cancer_sample`
+2: `flow_sample`
+3: `apt_buildings`
+4: `building_permits`
 
 <!----------------------------------------------------------------------------->
 
