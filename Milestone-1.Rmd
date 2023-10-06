@@ -86,10 +86,10 @@ And that is exactly the first thing that you will do!
 
 <!-------------------------- Start your work below ---------------------------->
 
-1: CHOICE_1_cancer_sample\
-2: CHOICE_2_flow_sample\
-3: CHOICE_3_apt_buildings\
-4: CHOICE_4_building_permits\
+1: 'cancer_sample'
+2: 'flow_sample'
+3: 'apt_buildings'
+4: 'building_permits'
 
 <!----------------------------------------------------------------------------->
 
@@ -137,7 +137,9 @@ Cancer_sample, since it has a relatively small row entires and I do want to purs
 
 <!-------------------------- Start your work below ---------------------------->
 
-I want to explore the relationship between diagnosis and other variables. <!----------------------------------------------------------------------------->
+I want to explore the relationship between diagnosis and other variables. Specifically which explantory variables will have an effect on diagnosis. 
+
+<!----------------------------------------------------------------------------->
 
 # Important note
 
@@ -167,14 +169,14 @@ Make sure that you're using dplyr and ggplot2 rather than base R for this task. 
 <!-------------------------- Start your work below ---------------------------->
 
 ```{r}
-# I plot the histogram of the mean radius which shows the distribution. It is important to know the distribution because it shows the possible values for a variable and how often they occur. Also by plotting it we can also see if it's symmetrical or heavy tailed. 
+# I plot the histogram of the mean radius which shows the distribution. It is important to know the distribution because it shows the possible values for a variable and how often they occur. Also by plotting it we can also see if it's symmetrical or heavy tailed. From the plot it looks like it's positive skewed.
 hist(cancer_sample$radius_mean)
 # Explore the relationship between diagnosis and radius_mean. I want to see if radius_mean has an effect on diagnosis. From the boxplot we can see if you have a malignant cancer you tend to have a higher radius. 
 ggplot(cancer_sample, aes(x = diagnosis, y = radius_mean)) + 
        geom_boxplot()
 # Boxplot to look at the frequency of different observations within the mean perimeter variable. This allows us to see the variability of the mean perimeter. 
 boxplot(cancer_sample$perimeter_mean)
-# Density plot. Similar to histogram where a density plot also shows the distribution.   
+# Density plot. Similar to histogram where a density plot also shows the distribution. Again the plot looks like positive skewed. 
 plot(density(cancer_sample$area_mean))
 ```
 

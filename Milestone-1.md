@@ -142,10 +142,8 @@ understand your data.
 
 <!-------------------------- Start your work below ---------------------------->
 
-1: CHOICE\_1\_cancer\_sample  
-2: CHOICE\_2\_flow\_sample  
-3: CHOICE\_3\_apt\_buildings  
-4: CHOICE\_4\_building\_permits  
+1: ‘cancer\_sample’ 2: ‘flow\_sample’ 3: ‘apt\_buildings’ 4:
+‘building\_permits’
 
 <!----------------------------------------------------------------------------->
 
@@ -326,7 +324,9 @@ dataset. Note it down below.
 <!-------------------------- Start your work below ---------------------------->
 
 I want to explore the relationship between diagnosis and other
-variables.
+variables. Specifically which explantory variables will have an effect
+on diagnosis.
+
 <!----------------------------------------------------------------------------->
 
 # Important note
@@ -393,7 +393,7 @@ sufficient comments for a reader to understand your reasoning and code.
 
 <!-------------------------- Start your work below ---------------------------->
 
-    # I plot the histogram of the mean radius which shows the distribution. It is important to know the distribution because it shows the possible values for a variable and how often they occur. Also by plotting it we can also see if it's symmetrical or heavy tailed. 
+    # I plot the histogram of the mean radius which shows the distribution. It is important to know the distribution because it shows the possible values for a variable and how often they occur. Also by plotting it we can also see if it's symmetrical or heavy tailed. From the plot it looks like it's positive skewed.
     hist(cancer_sample$radius_mean)
 
 ![](Milestone-1_files/figure-markdown_strict/unnamed-chunk-6-1.png)
@@ -409,7 +409,7 @@ sufficient comments for a reader to understand your reasoning and code.
 
 ![](Milestone-1_files/figure-markdown_strict/unnamed-chunk-6-3.png)
 
-    # Density plot. Similar to histogram where a density plot also shows the distribution.   
+    # Density plot. Similar to histogram where a density plot also shows the distribution. Again the plot looks like positive skewed. 
     plot(density(cancer_sample$area_mean))
 
 ![](Milestone-1_files/figure-markdown_strict/unnamed-chunk-6-4.png)
