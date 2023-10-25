@@ -6,10 +6,6 @@ This repository contains a mini data analysis assignment for STAT 545A W1 2023 a
 
 ## Contents
 
-In this folder, you can find the following files: \* `Milestone-2.Rmd`: the R Markdown file where for this assignment. \* `Milestone-2.md`: the output file of the R Markdown file mentioned above. 
+In this folder, you can find the following files: \* `model.rds`: the rds file containing our model from milestone 2 task 3. \* `summary_table.csv`: the csv file of the summary table from milestone 2 task 2. 
 
 ------------------------------------------------------------------------
-
-## How to use this repository
-
-To engage with this repository, simply run the R Markdown file to produce the analysis. This project uses [datateachr](https://github.com/UBC-MDS/datateachr), [broom](https://github.com/tidymodels/broom), [dplyr](https://dplyr.tidyverse.org/) and [ggplot2](https://ggplot2.tidyverse.org/) packages in R.
